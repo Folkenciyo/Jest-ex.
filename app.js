@@ -6,7 +6,7 @@ const oneEuroIs ={
 
 const fromDollarToYen = function (valueInDollar){
 
-    return (valueInDollar * oneEuroIs.USD)*oneEuroIs.JP 
+    return Math.floor((valueInDollar * oneEuroIs.USD)*oneEuroIs.JP) 
     
 }
 

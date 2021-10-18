@@ -11,12 +11,12 @@ test("One dollar should be 127.9 yenes", function(){
     const { fromDollarToYen } = require('./app.js')
     
     // hago mi comparacion (la prueba)
-    expect(fromDollarToYen(10)).toBe(1534.8); //1.2 dolates son 127.9 yenes, entonces 3.5 dolares deberian ser = (3.5 * 127.9)
+    expect(fromDollarToYen(10)).toBe(1534.); //1.2 dolates son 127.9 yenes, entonces 3.5 dolares deberian ser = (3.5 * 127.9)
 })
 
-test("One yen should be 0.8 pounds", function(){
+test("127.9 yens should be 0.8 pounds", function(){
     // importo la funcion desde app.js
-    const { fromYentToPound } = require('./app.js')
+    const { fromYenToPound } = require('./app.js')
     
     // hago mi comparacion (la prueba)
     expect(fromYenToPound(1279)).toBe(8); //127.9 yens son 1.2 dolares, entonces 3.5 euros deberian ser = (3.5 * 1.2)
